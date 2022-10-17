@@ -1,0 +1,171 @@
+@import "variables";
+
+.publishFeedContainer {
+  overflow: scroll;
+  height: 100vh;
+  flex: 1;
+  .topInformationArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    height: 60px;
+    width: 100%;
+
+    .colorMeanAreaDiv {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .colorMean {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 25px;
+        .colorType {
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+        }
+        p {
+          @include fontRaleway(400, normal, 12px, 1px);
+          margin-left: 10px;
+        }
+      }
+    }
+    .userProfilePicture {
+      width: 64px;
+      height: 64px;
+      border-radius: 64px;
+      object-fit: cover;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  .cardsArea {
+    width: 100%;
+    padding: 15px;
+
+    .cardLineContainer {
+      width: 100%;
+
+      .cardLineDateH1 {
+        @include fontRaleway(400, normal, 16px, 1px);
+        color: $color-grey-ACACAC;
+        margin-bottom: 10px;
+      }
+
+      .line {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+
+        .cardContainer {
+          width: 370px;
+          height: 475px;
+          margin-right: 25px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border: 0.5px solid rgba($color-grey-ACACAC, 0.25);
+          border-radius: 10px;
+          overflow: hidden;
+
+          .cardLink {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .cardContent {
+            width: 325px;
+            height: 100%;
+            padding: 10px;
+            overflow: scroll;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .cardContentTop {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+
+              p {
+                @include fontRaleway(400, normal, 16px, 1px);
+                color: rgba($color-grey-ACACAC, 1);
+              }
+
+              .cardContentTopButton {
+                img {
+                  margin: 5px;
+                }
+              }
+            }
+
+            .contentImageDiv {
+              min-width: 305px;
+              min-height: 305px;
+              max-width: 305px;
+              max-height: 305px;
+              display: inline-block;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              align-self: center;
+
+              .contentImage {
+                min-width: 305px;
+                min-height: 305px;
+                max-width: 305px;
+                max-height: 305px;
+              }
+            }
+
+            .entryMessageP {
+              @include fontRaleway(400, normal, 12px, 1px);
+              color: rgba($color-grey-ACACAC, 1);
+              max-height: 45px;
+              width: 100%;
+            }
+
+            .cardContentBottom {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+
+              div {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-right: 25px;
+
+                img {
+                  margin-right: 5px;
+                }
+
+                p{
+                  @include fontRaleway(400, normal, 12px, 1px); 
+                  color: rgba($color-grey-ACACAC, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

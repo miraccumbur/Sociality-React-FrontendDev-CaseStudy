@@ -1,0 +1,20 @@
+$color-grey-2a2f33: #2a2f33;
+$color-grey-393d42: #393d42;
+$color-grey-5E5C5C: #5E5C5C;
+$color-grey-ACACAC: #ACACAC;
+$color-red-f55661: #f55661;
+$color-green-3AC183: #3AC183;
+$color-green-73D9C7: #73D9C7;
+$color-white-ffffff: #fff;
+$color-black-000: #000;
+$color-yellow-F7BF38: #F7BF38;
+$color-red-F7BF38: #FB6450;
+$color-blue-67B1F2: #67B1F2;
+
+@mixin fontRaleway($weight,$style,$size,$space) {
+    font-family: 'Raleway', sans-serif;
+    font-weight:$weight;
+    font-style: $style;
+    font-size: $size;
+    letter-spacing:$space ;
+}
